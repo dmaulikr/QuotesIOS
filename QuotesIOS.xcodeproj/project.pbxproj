@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		17353EC456F633A7DC15BB1E /* Pods_QuotesIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F84AAEA5BAB333AE88B8DD96 /* Pods_QuotesIOS.framework */; };
+		498A63C11EDA332100385099 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498A63C01EDA332100385099 /* User.swift */; };
+		498A63C31EDA343C00385099 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498A63C21EDA343C00385099 /* Quote.swift */; };
+		498A63C51EDA6E7600385099 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498A63C41EDA6E7600385099 /* Comment.swift */; };
 		499965C41ED8A01C0028389B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499965C31ED8A01C0028389B /* AppDelegate.swift */; };
 		499965C61ED8A01C0028389B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499965C51ED8A01C0028389B /* ViewController.swift */; };
 		499965C91ED8A01C0028389B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 499965C71ED8A01C0028389B /* Main.storyboard */; };
@@ -36,6 +39,9 @@
 
 /* Begin PBXFileReference section */
 		24AE7125DF220430AA6EF0C2 /* Pods-QuotesIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuotesIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuotesIOS/Pods-QuotesIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		498A63C01EDA332100385099 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		498A63C21EDA343C00385099 /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		498A63C41EDA6E7600385099 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		499965C01ED8A01C0028389B /* QuotesIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuotesIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		499965C31ED8A01C0028389B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		499965C51ED8A01C0028389B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +85,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		498A63BA1EDA321700385099 /* quote */ = {
+			isa = PBXGroup;
+			children = (
+				498A63BB1EDA322A00385099 /* model */,
+			);
+			name = quote;
+			sourceTree = "<group>";
+		};
+		498A63BB1EDA322A00385099 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				498A63C21EDA343C00385099 /* Quote.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		498A63BC1EDA323800385099 /* comment */ = {
+			isa = PBXGroup;
+			children = (
+				498A63BD1EDA325200385099 /* model */,
+			);
+			name = comment;
+			sourceTree = "<group>";
+		};
+		498A63BD1EDA325200385099 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				498A63C41EDA6E7600385099 /* Comment.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		498A63BE1EDA325F00385099 /* user */ = {
+			isa = PBXGroup;
+			children = (
+				498A63BF1EDA326600385099 /* model */,
+			);
+			name = user;
+			sourceTree = "<group>";
+		};
+		498A63BF1EDA326600385099 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				498A63C01EDA332100385099 /* User.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
 		499965B71ED8A01C0028389B = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +158,9 @@
 		499965C21ED8A01C0028389B /* QuotesIOS */ = {
 			isa = PBXGroup;
 			children = (
+				498A63BE1EDA325F00385099 /* user */,
+				498A63BC1EDA323800385099 /* comment */,
+				498A63BA1EDA321700385099 /* quote */,
 				499965C31ED8A01C0028389B /* AppDelegate.swift */,
 				499965C51ED8A01C0028389B /* ViewController.swift */,
 				499965C71ED8A01C0028389B /* Main.storyboard */,
@@ -334,8 +391,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				498A63C51EDA6E7600385099 /* Comment.swift in Sources */,
+				498A63C31EDA343C00385099 /* Quote.swift in Sources */,
 				499965C61ED8A01C0028389B /* ViewController.swift in Sources */,
 				499965C41ED8A01C0028389B /* AppDelegate.swift in Sources */,
+				498A63C11EDA332100385099 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,6 +644,7 @@
 				499965EA1ED8A01C0028389B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		499965EB1ED8A01C0028389B /* Build configuration list for PBXNativeTarget "QuotesIOSTests" */ = {
 			isa = XCConfigurationList;
@@ -592,6 +653,7 @@
 				499965ED1ED8A01C0028389B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		499965EE1ED8A01C0028389B /* Build configuration list for PBXNativeTarget "QuotesIOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -600,6 +662,7 @@
 				499965F01ED8A01C0028389B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
