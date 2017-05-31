@@ -17,7 +17,7 @@ struct Quote: Comparable {
     let likes: [String]
     let timestamp: CLong
 
-    static func ==(lhs: Quote, rhs: Quote) -> Bool {
+    static func == (lhs: Quote, rhs: Quote) -> Bool {
         return lhs.author == rhs.author &&
         lhs.text == rhs.text &&
         lhs.image == rhs.image &&
@@ -25,7 +25,7 @@ struct Quote: Comparable {
         lhs.timestamp == rhs.timestamp
     }
 
-    public static func <(lhs: Quote, rhs: Quote) -> Bool {
+    public static func < (lhs: Quote, rhs: Quote) -> Bool {
         return lhs.timestamp < rhs.timestamp
     }
 
