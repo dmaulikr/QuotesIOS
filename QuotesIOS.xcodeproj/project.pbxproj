@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		17353EC456F633A7DC15BB1E /* Pods_QuotesIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F84AAEA5BAB333AE88B8DD96 /* Pods_QuotesIOS.framework */; };
 		498A63C11EDA332100385099 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498A63C01EDA332100385099 /* User.swift */; };
 		498A63C31EDA343C00385099 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498A63C21EDA343C00385099 /* Quote.swift */; };
 		498A63C51EDA6E7600385099 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498A63C41EDA6E7600385099 /* Comment.swift */; };
@@ -18,6 +17,9 @@
 		499965CE1ED8A01C0028389B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 499965CC1ED8A01C0028389B /* LaunchScreen.storyboard */; };
 		499965D91ED8A01C0028389B /* QuotesIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499965D81ED8A01C0028389B /* QuotesIOSTests.swift */; };
 		499965E41ED8A01C0028389B /* QuotesIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499965E31ED8A01C0028389B /* QuotesIOSUITests.swift */; };
+		49BC903C1EDF6A840020E94B /* QuoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BC903B1EDF6A840020E94B /* QuoteRepository.swift */; };
+		49CF92541EE748B700F01740 /* QuoteDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CF92531EE748B700F01740 /* QuoteDTO.swift */; };
+		66EC08B5F2E505D24DCEE083 /* Pods_QuotesIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B577AA3A7B2D70BDE65A4A57 /* Pods_QuotesIOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		24AE7125DF220430AA6EF0C2 /* Pods-QuotesIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuotesIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuotesIOS/Pods-QuotesIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		1D01451FD5F91908DAC809BC /* Pods-QuotesIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuotesIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuotesIOS/Pods-QuotesIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		498A63C01EDA332100385099 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		498A63C21EDA343C00385099 /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		498A63C41EDA6E7600385099 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
@@ -55,8 +57,10 @@
 		499965DF1ED8A01C0028389B /* QuotesIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuotesIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		499965E31ED8A01C0028389B /* QuotesIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesIOSUITests.swift; sourceTree = "<group>"; };
 		499965E51ED8A01C0028389B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		71FDE83F9F2D087D9AFDD7AA /* Pods-QuotesIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuotesIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuotesIOS/Pods-QuotesIOS.release.xcconfig"; sourceTree = "<group>"; };
-		F84AAEA5BAB333AE88B8DD96 /* Pods_QuotesIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuotesIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49BC903B1EDF6A840020E94B /* QuoteRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteRepository.swift; sourceTree = "<group>"; };
+		49CF92531EE748B700F01740 /* QuoteDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteDTO.swift; sourceTree = "<group>"; };
+		B48C9C0EAB0BDEA44DC225DA /* Pods-QuotesIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuotesIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuotesIOS/Pods-QuotesIOS.release.xcconfig"; sourceTree = "<group>"; };
+		B577AA3A7B2D70BDE65A4A57 /* Pods_QuotesIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuotesIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17353EC456F633A7DC15BB1E /* Pods_QuotesIOS.framework in Frameworks */,
+				66EC08B5F2E505D24DCEE083 /* Pods_QuotesIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +92,7 @@
 		498A63BA1EDA321700385099 /* quote */ = {
 			isa = PBXGroup;
 			children = (
+				49BC903A1EDF6A6B0020E94B /* data */,
 				498A63BB1EDA322A00385099 /* model */,
 			);
 			name = quote;
@@ -140,8 +145,8 @@
 				499965D71ED8A01C0028389B /* QuotesIOSTests */,
 				499965E21ED8A01C0028389B /* QuotesIOSUITests */,
 				499965C11ED8A01C0028389B /* Products */,
-				78AE45E3E7CE7B0A91D00E89 /* Pods */,
-				BF918390163933985A8ACEC1 /* Frameworks */,
+				A17C79A03636C315BA9F5F54 /* Pods */,
+				CA9811F3049A324ACC1C7638 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -189,19 +194,28 @@
 			path = QuotesIOSUITests;
 			sourceTree = "<group>";
 		};
-		78AE45E3E7CE7B0A91D00E89 /* Pods */ = {
+		49BC903A1EDF6A6B0020E94B /* data */ = {
 			isa = PBXGroup;
 			children = (
-				24AE7125DF220430AA6EF0C2 /* Pods-QuotesIOS.debug.xcconfig */,
-				71FDE83F9F2D087D9AFDD7AA /* Pods-QuotesIOS.release.xcconfig */,
+				49BC903B1EDF6A840020E94B /* QuoteRepository.swift */,
+				49CF92531EE748B700F01740 /* QuoteDTO.swift */,
+			);
+			name = data;
+			sourceTree = "<group>";
+		};
+		A17C79A03636C315BA9F5F54 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D01451FD5F91908DAC809BC /* Pods-QuotesIOS.debug.xcconfig */,
+				B48C9C0EAB0BDEA44DC225DA /* Pods-QuotesIOS.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		BF918390163933985A8ACEC1 /* Frameworks */ = {
+		CA9811F3049A324ACC1C7638 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F84AAEA5BAB333AE88B8DD96 /* Pods_QuotesIOS.framework */,
+				B577AA3A7B2D70BDE65A4A57 /* Pods_QuotesIOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -213,12 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 499965E81ED8A01C0028389B /* Build configuration list for PBXNativeTarget "QuotesIOS" */;
 			buildPhases = (
-				A40F6E9422DBDCAA342C949D /* [CP] Check Pods Manifest.lock */,
+				13528CF6917215E3696D15F9 /* [CP] Check Pods Manifest.lock */,
 				499965BC1ED8A01C0028389B /* Sources */,
 				499965BD1ED8A01C0028389B /* Frameworks */,
 				499965BE1ED8A01C0028389B /* Resources */,
-				3420F52A1E2EEF0476DDF29C /* [CP] Embed Pods Frameworks */,
-				DFDE5657211AF8EB7A58F985 /* [CP] Copy Pods Resources */,
+				077216EAB4BDE65A11C97B5A /* [CP] Embed Pods Frameworks */,
+				2A65CA85CD14F5F5AD2F5F86 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -339,7 +353,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3420F52A1E2EEF0476DDF29C /* [CP] Embed Pods Frameworks */ = {
+		077216EAB4BDE65A11C97B5A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -354,7 +368,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuotesIOS/Pods-QuotesIOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A40F6E9422DBDCAA342C949D /* [CP] Check Pods Manifest.lock */ = {
+		13528CF6917215E3696D15F9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -369,7 +383,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		DFDE5657211AF8EB7A58F985 /* [CP] Copy Pods Resources */ = {
+		2A65CA85CD14F5F5AD2F5F86 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -391,8 +405,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49CF92541EE748B700F01740 /* QuoteDTO.swift in Sources */,
 				498A63C51EDA6E7600385099 /* Comment.swift in Sources */,
 				498A63C31EDA343C00385099 /* Quote.swift in Sources */,
+				49BC903C1EDF6A840020E94B /* QuoteRepository.swift in Sources */,
 				499965C61ED8A01C0028389B /* ViewController.swift in Sources */,
 				499965C41ED8A01C0028389B /* AppDelegate.swift in Sources */,
 				498A63C11EDA332100385099 /* User.swift in Sources */,
@@ -547,7 +563,7 @@
 		};
 		499965E91ED8A01C0028389B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24AE7125DF220430AA6EF0C2 /* Pods-QuotesIOS.debug.xcconfig */;
+			baseConfigurationReference = 1D01451FD5F91908DAC809BC /* Pods-QuotesIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QuotesIOS/Info.plist;
@@ -560,7 +576,7 @@
 		};
 		499965EA1ED8A01C0028389B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71FDE83F9F2D087D9AFDD7AA /* Pods-QuotesIOS.release.xcconfig */;
+			baseConfigurationReference = B48C9C0EAB0BDEA44DC225DA /* Pods-QuotesIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QuotesIOS/Info.plist;
