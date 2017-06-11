@@ -14,7 +14,7 @@ class QuoteRepository {
 
     fileprivate let endPoint = "https://raw.githubusercontent.com/srgtrujillo/QuotesIOS/master/api/quotes.json"
 
-    fileprivate func getQuotesFromUrl(_ completion: @escaping ([Quote]) -> ()) {
+    fileprivate func getQuotesFromUrl(_ completion: @escaping ([Quote]) -> Void) {
         Alamofire.request(endPoint).responseArray { (response: DataResponse<[QuoteDTO]>) in
             debugPrint(response)
             if let quotesDTO = response.result.value {
@@ -32,7 +32,7 @@ class QuoteRepository {
         }
     }
 
-    func getAll(_ completion: @escaping ([Quote]) -> ()) {
+    func getAll(_ completion: @escaping ([Quote]) -> Void) {
         getQuotesFromUrl { (response: [Quote]) in
             completion(response)
         }

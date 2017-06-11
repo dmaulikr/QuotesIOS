@@ -7,4 +7,4 @@ before_install:
 
 script:
   - swiftlint
-  - set -o pipefail && xcodebuild -workspace QuotesIOS.xcworkspace -scheme 'QuotesIOS' -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.3' build test CODE_SIGN_IDENTITY=- | xcpretty -c
+  - set -o pipefail && xcodebuild -workspace QuotesIOS.xcworkspace -scheme 'QuotesIOS' -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.3.1' build test CODE_SIGN_IDENTITY=- | xcpretty -c

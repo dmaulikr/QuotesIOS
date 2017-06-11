@@ -19,7 +19,7 @@ class QuoteDTO: Mappable {
     var timestamp: CLong?
 
     required init?(map: Map) {
-        
+
     }
 
     func mapping(map: Map) {
