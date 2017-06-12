@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		496B3AAE1EEF33B700B95755 /* GetQuotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496B3AAD1EEF33B700B95755 /* GetQuotes.swift */; };
 		498A63C11EDA332100385099 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498A63C01EDA332100385099 /* User.swift */; };
 		498A63C31EDA343C00385099 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498A63C21EDA343C00385099 /* Quote.swift */; };
 		498A63C51EDA6E7600385099 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498A63C41EDA6E7600385099 /* Comment.swift */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		1D01451FD5F91908DAC809BC /* Pods-QuotesIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuotesIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuotesIOS/Pods-QuotesIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		496B3AAD1EEF33B700B95755 /* GetQuotes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetQuotes.swift; sourceTree = "<group>"; };
 		498A63C01EDA332100385099 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		498A63C21EDA343C00385099 /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		498A63C41EDA6E7600385099 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
@@ -89,9 +91,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		496B3AAC1EEF339000B95755 /* usecases */ = {
+			isa = PBXGroup;
+			children = (
+				496B3AAD1EEF33B700B95755 /* GetQuotes.swift */,
+			);
+			name = usecases;
+			sourceTree = "<group>";
+		};
 		498A63BA1EDA321700385099 /* quote */ = {
 			isa = PBXGroup;
 			children = (
+				496B3AAC1EEF339000B95755 /* usecases */,
 				49BC903A1EDF6A6B0020E94B /* data */,
 				498A63BB1EDA322A00385099 /* model */,
 			);
@@ -408,6 +419,7 @@
 				49CF92541EE748B700F01740 /* QuoteDTO.swift in Sources */,
 				498A63C51EDA6E7600385099 /* Comment.swift in Sources */,
 				498A63C31EDA343C00385099 /* Quote.swift in Sources */,
+				496B3AAE1EEF33B700B95755 /* GetQuotes.swift in Sources */,
 				49BC903C1EDF6A840020E94B /* QuoteRepository.swift in Sources */,
 				499965C61ED8A01C0028389B /* ViewController.swift in Sources */,
 				499965C41ED8A01C0028389B /* AppDelegate.swift in Sources */,
